@@ -126,6 +126,12 @@ def print_help(ctx):
     is_flag=True,
 )
 @click.option("-f", "--file", type=click.File("rb"), required=False)
+@click.option(
+    "--multiline-file",
+    help="Parse one ciphertext per line",
+    type=click.File("rb"),
+    required=False,
+)
 @click.argument("text_stdin", callback=get_name, required=False)
 def main(**kwargs):
     """Ciphey - Automated Decryption Tool
@@ -227,6 +233,9 @@ def main(**kwargs):
     if kwargs["text"] is None:
         if kwargs["file"] is not None:
             kwargs["text"] = kwargs["file"].read()
+        elif kwargs["multiline_file"] is not None:
+            kwargs["text"] = kwargs["multiline_file"].readlines()
+            # TODO: expand processing further
         elif kwargs["text_stdin"] is not None:
             kwargs["text"] = kwargs["text_stdin"]
         else:
