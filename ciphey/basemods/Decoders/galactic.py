@@ -1,7 +1,7 @@
 # community
 # by https://github.com/lukasgabriel
 
-from typing import Optional, Dict, List
+from typing import Optional, Dict
 
 from ciphey.iface import Config, ParamSpec, T, U, Decoder, registry, Translation
 from loguru import logger

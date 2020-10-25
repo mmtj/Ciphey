@@ -26,7 +26,6 @@ import yaspin
 from yaspin.spinners import Spinners
 from yaspin import yaspin
 
-import time
 
 warnings.filterwarnings("ignore")
 

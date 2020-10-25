@@ -8,9 +8,9 @@
 Github: brandonskerritt
 """
 
-from typing import Optional, Dict, Union, Set, List, Tuple
+from typing import Optional, Dict, List
 
-from ciphey.iface import ParamSpec, CrackResult, T, CrackInfo, registry
+from ciphey.iface import ParamSpec, CrackResult, CrackInfo, registry
 
 from loguru import logger
 

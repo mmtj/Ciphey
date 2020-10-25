@@ -1,4 +1,4 @@
-from typing import Optional, Dict, List
+from typing import Optional, Dict
 
 from ciphey.iface import Config, ParamSpec, T, U, Decoder, registry, Translation
 

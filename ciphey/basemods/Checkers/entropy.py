@@ -1,11 +1,8 @@
-from typing import Optional, Dict, List
+from typing import Optional, Dict
 
 from loguru import logger
 
-from . import brandon
 from ciphey.iface import registry, Checker, ParamSpec, T, Config
-
-import json
 
 
 @registry.register

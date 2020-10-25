@@ -7,15 +7,14 @@
 © Brandon Skerritt
 Github: brandonskerritt
 """
-import sys
 from distutils import util
-from typing import Optional, Dict, Union, Set, List, Tuple
+from typing import Optional, Dict, Union, List
 
 from loguru import logger
 import ciphey
 import cipheycore
 
-from ciphey.iface import ParamSpec, CrackResult, T, CrackInfo, registry
+from ciphey.iface import ParamSpec, CrackResult, CrackInfo, registry
 from ciphey.common import fix_case
 
 

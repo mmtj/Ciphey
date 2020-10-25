@@ -1,7 +1,6 @@
 from abc import ABC, abstractmethod
 from typing import (
     Any,
-    Callable,
     Dict,
     Generic,
     Optional,
@@ -9,15 +8,8 @@ from typing import (
     NamedTuple,
     TypeVar,
     Type,
-    Union,
     Set,
 )
-import pydoc
-
-from loguru import logger
-
-import datetime
-
 from ._fwd import config as Config
 
 T = TypeVar("T")

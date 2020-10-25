@@ -18,7 +18,7 @@ import yaml
 import appdirs
 
 from . import _fwd
-from ._modules import Checker, Searcher, ResourceLoader, PolymorphicChecker
+from ._modules import Searcher, ResourceLoader, PolymorphicChecker
 
 
 class Cache:
